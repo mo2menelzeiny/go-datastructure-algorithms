@@ -5,6 +5,19 @@ import "datastructure"
 func main() {
 	TestStack()
 	TestQueue()
+	TestMultiStack()
+}
+
+func TestMultiStack() {
+	stack := datastructure.MultiStack{}
+	stack.Init(10, 4)
+	stack.Push(2, 2)
+	stack.Push(1, 5)
+	stack.Push(3, 4)
+	stack.Pop(1)
+	stack.Push(2, 33)
+	stack.Pop(2)
+	stack.Push(4, 33)
 }
 
 func TestStack() {
@@ -12,8 +25,7 @@ func TestStack() {
 	stack.Add(1)
 	stack.Add(2)
 	stack.Add(3)
-	x := stack.Pop()
-	println(x)
+	stack.Pop()
 }
 
 func TestQueue() {
@@ -21,6 +33,5 @@ func TestQueue() {
 	queue.Add(1)
 	queue.Add(2)
 	queue.Add(3)
-	x := queue.Remove()
-	println(x)
+	queue.Remove()
 }
