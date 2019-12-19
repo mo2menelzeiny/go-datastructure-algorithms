@@ -6,6 +6,16 @@ func main() {
 	TestStack()
 	TestQueue()
 	TestMultiStack()
+	TestStackMin()
+}
+
+func TestStackMin() {
+	stack := datastructure.MinStack{}
+	stack.Push(1)
+	stack.Push(2)
+	stack.Push(3)
+	stack.Push(0)
+	stack.Min()
 }
 
 func TestMultiStack() {
