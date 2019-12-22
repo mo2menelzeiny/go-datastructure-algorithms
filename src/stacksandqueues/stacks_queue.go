@@ -1,4 +1,4 @@
-package datastructure
+package stacksandqueues
 
 type TwoStacksQueue struct {
 	stackA Stack

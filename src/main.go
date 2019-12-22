@@ -1,6 +1,6 @@
 package main
 
-import "datastructure"
+import "stacksandqueues"
 
 func main() {
 	TestStack()
@@ -12,7 +12,7 @@ func main() {
 }
 
 func TestTwoStacksQueue() {
-	queue := datastructure.TwoStacksQueue{}
+	queue := stacksandqueues.TwoStacksQueue{}
 	queue.Add(0)
 	queue.Add(1)
 	queue.Add(2)
@@ -21,7 +21,7 @@ func TestTwoStacksQueue() {
 }
 
 func TestStackOfStacks() {
-	stack := datastructure.StackOfStacks{Threshold: 3}
+	stack := stacksandqueues.StackOfStacks{Threshold: 3}
 	stack.Push(0)
 	stack.Push(1)
 	stack.Push(2)
@@ -36,7 +36,7 @@ func TestStackOfStacks() {
 }
 
 func TestStackMin() {
-	stack := datastructure.MinStack{}
+	stack := stacksandqueues.MinStack{}
 	stack.Push(1)
 	stack.Push(2)
 	stack.Push(3)
@@ -45,7 +45,7 @@ func TestStackMin() {
 }
 
 func TestMultiStack() {
-	stack := datastructure.MultiStack{}
+	stack := stacksandqueues.MultiStack{}
 	stack.Init(10, 4)
 	stack.Push(2, 2)
 	stack.Push(1, 5)
@@ -57,7 +57,7 @@ func TestMultiStack() {
 }
 
 func TestStack() {
-	stack := datastructure.Stack{}
+	stack := stacksandqueues.Stack{}
 	stack.Push(1)
 	stack.Push(2)
 	stack.Push(3)
@@ -65,7 +65,7 @@ func TestStack() {
 }
 
 func TestQueue() {
-	queue := datastructure.Queue{}
+	queue := stacksandqueues.Queue{}
 	queue.Add(1)
 	queue.Add(2)
 	queue.Add(3)

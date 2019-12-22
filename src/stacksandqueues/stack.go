@@ -1,4 +1,4 @@
-package datastructure
+package stacksandqueues
 
 type LinkedNode struct {
 	value int
