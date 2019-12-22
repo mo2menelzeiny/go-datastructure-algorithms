@@ -7,6 +7,22 @@ func main() {
 	TestQueue()
 	TestMultiStack()
 	TestStackMin()
+	TestStackOfStacks()
+}
+
+func TestStackOfStacks() {
+	stack := datastructure.StackOfStacks{Threshold: 3}
+	stack.Push(0)
+	stack.Push(1)
+	stack.Push(2)
+	stack.Push(3)
+	stack.Push(4)
+	stack.Push(5)
+	stack.Push(6)
+	stack.Push(7)
+	stack.Push(8)
+
+	stack.PopAt(2)
 }
 
 func TestStackMin() {
@@ -32,9 +48,9 @@ func TestMultiStack() {
 
 func TestStack() {
 	stack := datastructure.Stack{}
-	stack.Add(1)
-	stack.Add(2)
-	stack.Add(3)
+	stack.Push(1)
+	stack.Push(2)
+	stack.Push(3)
 	stack.Pop()
 }
 

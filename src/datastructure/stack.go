@@ -9,7 +9,7 @@ type Stack struct {
 	top *LinkedNode
 }
 
-func (s *Stack) Add(value int) {
+func (s *Stack) Push(value int) {
 	node := LinkedNode{value: value}
 	node.next = s.top
 	s.top = &node
@@ -22,6 +22,6 @@ func (s *Stack) Pop() *LinkedNode {
 	return node
 }
 
-func (s *Stack) IsEmpty() bool {
+func (s *Stack) isEmpty() bool {
 	return s.top == nil
 }
