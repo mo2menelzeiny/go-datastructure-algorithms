@@ -8,6 +8,16 @@ func main() {
 	TestMultiStack()
 	TestStackMin()
 	TestStackOfStacks()
+	TestTwoStacksQueue()
+}
+
+func TestTwoStacksQueue() {
+	queue := datastructure.TwoStacksQueue{}
+	queue.Add(0)
+	queue.Add(1)
+	queue.Add(2)
+
+	queue.Remove()
 }
 
 func TestStackOfStacks() {
