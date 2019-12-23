@@ -10,6 +10,33 @@ func main() {
 	TestStackOfStacks()
 	TestTwoStacksQueue()
 	TestSortStack()
+	TestAnimalShelter()
+}
+func TestAnimalShelter() {
+	animalShelter := stacksandqueues.AnimalShelter{}
+	animalShelter.Enqueue(stacksandqueues.Animal{
+		AnimalType: stacksandqueues.ANIMAL_CAT,
+		Name:       "Folla",
+	})
+
+	animalShelter.Enqueue(stacksandqueues.Animal{
+		AnimalType: stacksandqueues.ANIMAL_DOG,
+		Name:       "Babo",
+	})
+
+	animalShelter.Enqueue(stacksandqueues.Animal{
+		AnimalType: stacksandqueues.ANIMAL_CAT,
+		Name:       "Keko",
+	})
+
+	animalShelter.Enqueue(stacksandqueues.Animal{
+		AnimalType: stacksandqueues.ANIMAL_DOG,
+		Name:       "Samba",
+	})
+
+	animalShelter.DequeueAny()
+	animalShelter.DequeueAnimal(stacksandqueues.ANIMAL_DOG)
+
 }
 
 func TestSortStack() {
