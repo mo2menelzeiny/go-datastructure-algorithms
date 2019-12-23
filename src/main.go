@@ -9,6 +9,16 @@ func main() {
 	TestStackMin()
 	TestStackOfStacks()
 	TestTwoStacksQueue()
+	TestSortStack()
+}
+
+func TestSortStack() {
+	stack := stacksandqueues.Stack{}
+	stack.Push(2)
+	stack.Push(3)
+	stack.Push(1)
+	stack.Push(0)
+	stacksandqueues.SortStack(&stack)
 }
 
 func TestTwoStacksQueue() {
